@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crackle</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/site logo.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <img src="assets/logo.png" alt="cracked logo" />
+      <ul>
+        <li onclick="loadMovies()">
+          <i class="fa-solid fa-video"></i>
+          <p>Movies</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-tv"></i>
+          <p>TV Shows</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-plus"></i>
+          <p>Watchlist</p>
+        </li>
+      </ul>
+
+      <ul id="secondUl">
+        <li>
+          <i
+
+            onclick="SearchMovie()"
+            class="fa-solid fa-magnifying-glass"
+            style="color: #ece4c6; cursor: pointer;"
+          ></i>
+          <input id="search" type="text" placeholder="Search" />
+        </li>
+        <li>
+          <button style="background-color: #ed6935; border: 0">
+            Create Account
+          </button>
+        </li>
+        <li>
+          <button style="background-color: transparent; color: #ed6935">
+            Sign in
+          </button>
+        </li>
+      </ul>
+    </header>
+
+    <aside id="aside">
+      <p style="color: #ece4c6" onclick="loadMovies()">All Movies</p>
+    </aside>
+
+    <main id="main"></main>
+
+    <script
+      src="https://kit.fontawesome.com/193bc7c6b3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
